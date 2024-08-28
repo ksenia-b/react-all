@@ -3,17 +3,17 @@ import { Container } from "react-bootstrap";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { NewNote } from "./NewNote";
 
-type Note = {
+export type Note = {
   id: string & NoteData
 }
 
-type NoteData = {
+export type NoteData = {
   title: string,
   markdown: string,
   tags: Tag[]
 }
 
-type Tag = {
+export type Tag = {
   id: string,
   label: string
 }
